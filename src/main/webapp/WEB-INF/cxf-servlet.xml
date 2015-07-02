@@ -29,6 +29,6 @@
         </jaxrs:serviceBeans>
     </jaxrs:server>
 
-    <bean id="eventsServiceBean" class="EventsManagerService"/>
+    <bean id="eventsServiceBean" class="org.wso2.carbon.sample.service.EventsManagerService"/>
 </beans>
 

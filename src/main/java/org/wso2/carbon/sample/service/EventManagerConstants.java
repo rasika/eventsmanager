@@ -21,7 +21,7 @@ import org.wso2.carbon.utils.CarbonUtils;
 public abstract class EventManagerConstants {
 	public final static String CLIENT_ID = "YOUR_CLIENT_ID_HERE";
 	public final static String CLIENT_SECRET = "YOUR_CLIENT_SECRET_CODE_HERE";
-	public final static String OAUTH_REDIRECT_URL = "https://appserver.dev.cloud.wso2.com/t/wso2internal/webapps/eventsmanager-default-SNAPSHOT/services/events/eventsservice/authenticate/callback";
+	public final static String OAUTH_REDIRECT_URL = "YOUR_CALLBACK_URL";
 	//protected final static String OAUTH_REDIRECT_URL = "http://localhost:9763/eventsmanager/services/events/eventsservice/authenticate/callback";
 	public static final String CALENDAR_ID = "YOUR_CALENDAR_ID";
 }
