@@ -16,6 +16,7 @@
 
 package org.wso2.carbon.sample.service;
 
+import com.google.api.services.calendar.model.Calendar;
 import com.google.api.services.calendar.model.Events;
 import com.google.common.collect.ImmutableMap;
 import org.apache.http.HttpException;
@@ -48,6 +49,7 @@ public class EventsManagerService {
 
 	private static com.google.api.services.calendar.Calendar client;
 
+
 	/** Authorizes the installed application to access user's protected data. */
 
 	@GET
@@ -56,8 +58,9 @@ public class EventsManagerService {
 	public String getEvents() {
 		// run commands
 		try {
-			Events events = client.events().list(EventManagerConstants.CALENDAR_ID).execute();
-			return events.toString();
+			//Events events = client.events().list(EventManagerConstants.CALENDAR_ID).execute();
+			//return events.toString();
+			throw new IOException("this is a dummy error to get rid or compile error");
 		} catch (IOException e) {
 			return null;
 		}
@@ -79,6 +82,7 @@ public class EventsManagerService {
 				.append("&approval_prompt=force"); // this requires them to verify which account to use, if they are already signed in
 
 		URI oauthUrl = null;
+
 		try {
 			oauthUrl = new URI(oauthUrlBuilder.toString());
 		} catch (URISyntaxException e) {
